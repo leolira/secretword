@@ -8,7 +8,7 @@ while encryptedWord!=SECRETWORD:
     if len(inputLetter) > 1:
         print('\nType one letter only for each input!')
     elif inputLetter in modSecretWord:
-        attempts = attempts+1
+        attempts += 1
         for letter in modSecretWord:
             if letter == inputLetter:
                 letterIndex = modSecretWord.find(letter)
